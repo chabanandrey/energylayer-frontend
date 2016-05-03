@@ -1,0 +1,100 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link href="0.0.0.0_files/bootstrap.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href="0.0.0.0_files/style.css" rel="stylesheet">
+  <title>Login</title>
+  <script src="0.0.0.0_files/bootstrap.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+
+
+    <body class="login-page"><ul class="flashes">
+    
+      <li class="info">Please log in to access this page.</li>
+    
+    </ul>
+  
+<h1>Login</h1>
+<form action="/login/" method="POST" name="login_user_form">
+  <div style="display:none;"><input id="csrf_token" name="csrf_token" value="1461097638##b4d694277088730d99cae0658f52b629156a1075" type="hidden"><input id="next" name="next" value="/" type="hidden"></div>
+  
+  <p>
+    <label for="email">Email Address</label> <input id="email" name="email" type="text">
+    
+  </p>
+
+  
+  <p>
+    <label for="password">Password</label> <input id="password" name="password" value="" type="password">
+    
+  </p>
+
+  
+  <p>
+    <label for="remember">Remember Me</label> <input id="remember" name="remember" value="y" type="checkbox">
+    
+  </p>
+
+  
+  <p><input id="next" name="next" value="/" type="hidden"></p>
+
+  
+  <p><input id="submit" name="submit" value="Login" type="submit"></p>
+
+</form>
+
+<h2>Menu</h2>
+<ul>
+  <li><a href="http://0.0.0.0:9000/login/?next=/">Login</a></li>
+  
+  <li><a href="http://0.0.0.0:9000/register/?next=/">Register</a><br></li>
+  
+  
+  <li><a href="http://0.0.0.0:9000/reset">Forgot password</a><br></li>
+  
+  
+  <li><a href="http://0.0.0.0:9000/confirm">Confirm account</a></li>
+  
+</ul>
+
+<div>
+    <p>
+        <a href="http://0.0.0.0:9000/oauth/facebook" class="fb-button">
+            <span>Login with Facebook:</span>
+            <img alt="Facebook" src="0.0.0.0_files/facebook.png" height="64" width="64" border="0">
+        </a>
+    </p>
+    <p>
+        <a href="http://0.0.0.0:9000/oauth/twitter" class="tw-button">
+            <span>Login with Twitter:</span>
+            <img alt="Twitter" src="0.0.0.0_files/twitter.png" height="64" width="64" border="0">
+        </a>
+    </p>
+    <p>
+        <a href="http://0.0.0.0:9000/oauth/google" class="go-button">
+            <span>Login with Google:</span>
+            <img alt="Google" src="0.0.0.0_files/google.png" height="64" width="64" border="0">
+        </a>
+    </p>
+</div>
+
+<!--<div class="variation">
+    <p>
+        <a href="http://0.0.0.0:9000/oauth/facebook" class="fb-button">
+            Login with Facebook:
+            <img alt="Facebook" src="0.0.0.0_files/facebook-1.png" height="64" width="64" border="0">
+        </a>
+    </p>
+    <p>
+        <a href="http://0.0.0.0:9000/oauth/twitter" class="tw-button">
+            Login with Twitter:
+            <img alt="Twitter" src="0.0.0.0_files/twitter-1.png" height="64" width="64" border="0">
+        </a>
+    </p>
+    <p>
+        <a href="http://0.0.0.0:9000/oauth/google" class="go-button">
+            Login with Google:
+            <img alt="Google" src="0.0.0.0_files/google-1.png" height="64" width="64" border="0">
+        </a>
+    </p>
+</div>-->
+</body></html>

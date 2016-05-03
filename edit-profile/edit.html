@@ -2,14 +2,16 @@
 <html><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <link href="edit_files/bootstrap.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <script src="edit_files/bootstrap.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link href="edit_files/style.css" rel="stylesheet">
+    <title>Edit</title>
+	<script src="edit_files/bootstrap.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="prfile-page">
 <div class="form">
     <div class="tab-content">
         <div id="edit">
             <h1>Edit profile</h1>
-            <div>
+            <div class="thumb">
                 <img src="edit_files/avatar.png" class="avatar" height="128" width="128">
             </div>
             <form action="/edit" method="post" enctype="multipart/form-data">
@@ -48,50 +50,76 @@
                 <button type="submit" class="button button-block">
                 Apply</button>
             </form>
-        <div>
-            <p>
-                <a href="http://0.0.0.0:9000/oauth/facebook">
-                    Connect Facebook profile:
-                    <img alt="Facebook" src="edit_files/facebook.png" height="64" width="64" border="0">
-                </a>
-                
-                
-                <br>
-                <a href="http://0.0.0.0:9000/oauth/disconnect/facebook">
-                    Disconnect Facebook profile:
-                </a>
-                
-            </p>
-            <p>
-                <a href="http://0.0.0.0:9000/oauth/twitter">
-                    Connect Twitter profile:
-                    <img alt="Twitter" src="edit_files/twitter.png" height="64" width="64" border="0">
-                </a>
-                
-                
-                <br>
-                <a href="http://0.0.0.0:9000/oauth/disconnect/twitter">
-                    Disconnect Twitter profile:
-                </a>
-                
-            </p>
-            <p>
-                <a href="http://0.0.0.0:9000/oauth/google">
-                    Connect Google profile:
-                    <img alt="Google" src="edit_files/google.png" height="64" width="64" border="0">
-                </a>
-                
-                
-                <br>
-                <a href="http://0.0.0.0:9000/oauth/disconnect/google">
-                    Disconnect Google profile:
-                </a>
-                
-            </p>
-            <p>
-                <a href="http://0.0.0.0:9000/">Home page</a>
-            </p>
-        </div>
+            <div  class="nav-block">
+	            <p>
+	                <a href="http://0.0.0.0:9000/oauth/facebook" class="fb-button">
+	                    <span>Connect Facebook profile:</span>
+	                    <img alt="Facebook" src="edit_files/facebook.png" height="64" width="64" border="0">
+	                </a>
+	                <br>
+	                <a href="http://0.0.0.0:9000/oauth/disconnect/facebook" class="cansel-button">
+	                    <span>Disconnect Facebook profile:</span>
+	                </a>                
+	            </p>
+	            <p>
+	                <a href="http://0.0.0.0:9000/oauth/twitter" class="tw-button">
+	                    <span>Connect Twitter profile:</span>
+	                    <img alt="Twitter" src="edit_files/twitter.png" height="64" width="64" border="0">
+	                </a>              
+	                <br>
+	                <a href="http://0.0.0.0:9000/oauth/disconnect/twitter" class="cansel-button">
+	                    <span>Disconnect Twitter profile:</span>
+	                </a> 
+	            </p>
+	            <p>
+	                <a href="http://0.0.0.0:9000/oauth/google" class="go-button">
+	                    <span>Connect Google profile:</span>
+	                    <img alt="Google" src="edit_files/google.png" height="64" width="64" border="0">
+	                </a>
+	                <br>
+	                <a href="http://0.0.0.0:9000/oauth/disconnect/google" class="cansel-button">
+	                    <span>Disconnect Google profile:</span>
+	                </a>
+	            </p>
+	            <p>
+	                <a href="http://0.0.0.0:9000/" class="submit">Home page</a>
+	            </p>
+	        </div>
+			<!--<div  class="nav-block variation">
+	            <p>
+	                <a href="http://0.0.0.0:9000/oauth/facebook" class="fb-button">
+	                    Connect Facebook profile:
+	                    <img alt="Facebook" src="edit_files/facebook-1.png" height="64" width="64" border="0">
+	                </a>
+	                <br>
+	                <a href="http://0.0.0.0:9000/oauth/disconnect/facebook" class="cansel-button">
+	                    Disconnect Facebook profile:
+	                </a>                
+	            </p>
+	            <p>
+	                <a href="http://0.0.0.0:9000/oauth/twitter" class="tw-button">
+	                    Connect Twitter profile:
+	                    <img alt="Twitter" src="edit_files/twitter-1.png" height="64" width="64" border="0">
+	                </a>              
+	                <br>
+	                <a href="http://0.0.0.0:9000/oauth/disconnect/twitter" class="cansel-button">
+	                    Disconnect Twitter profile:
+	                </a> 
+	            </p>
+	            <p>
+	                <a href="http://0.0.0.0:9000/oauth/google" class="go-button">
+	                    Connect Google profile:
+	                    <img alt="Google" src="edit_files/google-1.png" height="64" width="64" border="0">
+	                </a>
+	                <br>
+	                <a href="http://0.0.0.0:9000/oauth/disconnect/google" class="cansel-button">
+	                    Disconnect Google profile:
+	                </a>
+	            </p>
+	            <p>
+	                <a href="http://0.0.0.0:9000/" class="submit">Home page</a>
+	            </p>
+	        </div>-->
         </div>
     </div><!-- tab-content -->
 </div> <!-- /form -->

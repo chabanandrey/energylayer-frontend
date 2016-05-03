@@ -1,11 +1,14 @@
 <html><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <link href="register_files/bootstrap.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href="register_files/style.css" rel="stylesheet">
+  <title>Register</title>
   <script src="register_files/bootstrap.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 
 
-<body><h1>Register</h1>
+<body class="register-page">
+	<h1>Register</h1>
 <form action="/register/" method="POST" name="register_user_form">
   <div style="display:none;"><input id="csrf_token" name="csrf_token" value="1461097748##ad84cfead5672f33e05747064cd7d29c970985ae" type="hidden"><input id="next" name="next" value="" type="hidden"></div>
   
@@ -41,47 +44,57 @@
   
     
   <p>
-    <label for="password_confirm">Retype Password</label> <input id="password_confirm" name="password_confirm" value="" type="password">
-    
-  </p>
-
-  
-  
+    <label for="password_confirm">Retype Password</label> <input id="password_confirm" name="password_confirm" value="" type="password">    
+  </p>  
   <p><input id="submit" name="submit" value="Register" type="submit"></p>
-
 </form>
 
 <h2>Menu</h2>
 <ul>
-  <li><a href="http://0.0.0.0:9000/login/">Login</a></li>
-  
+  <li><a href="http://0.0.0.0:9000/login/">Login</a></li>  
   <li><a href="http://0.0.0.0:9000/register/">Register</a><br></li>
-  
-  
-  <li><a href="http://0.0.0.0:9000/reset">Forgot password</a><br></li>
-  
-  
+  <li><a href="http://0.0.0.0:9000/reset">Forgot password</a><br></li>  
   <li><a href="http://0.0.0.0:9000/confirm">Confirm account</a></li>
   
 </ul>
 
 <div>
     <p>
-        <a href="http://0.0.0.0:9000/oauth/facebook">
-            Register with Facebook:
+        <a href="http://0.0.0.0:9000/oauth/facebook" class="fb-button">
+            <span>Register with Facebook:</span>
             <img alt="Facebook" src="register_files/facebook.png" height="64" width="64" border="0">
         </a>
     </p>
     <p>
-        <a href="http://0.0.0.0:9000/oauth/twitter">
-            Register with Twitter:
+        <a href="http://0.0.0.0:9000/oauth/twitter" class="tw-button">
+            <span>Register with Twitter:</span>
             <img alt="Twitter" src="register_files/twitter.png" height="64" width="64" border="0">
         </a>
     </p>
-        <p>
-        <a href="http://0.0.0.0:9000/oauth/google">
-            Register with Google:
-            <img alt="Google" src="register_files/google.png" height="64" width="64" border="0">
+    <p>
+        <a href="http://0.0.0.0:9000/oauth/google" class="go-button">
+            <span>Register with Google:</span> 
+			<img alt="Google" src="register_files/google.png" height="64" width="64" border="0">
         </a>
     </p>
-</div></body></html>
+</div>
+<!--<div class="variation">
+    <p>
+        <a href="http://0.0.0.0:9000/oauth/facebook" class="fb-button">
+            Register with Facebook:
+            <img alt="Facebook" src="register_files/facebook-1.png" height="64" width="64" border="0">
+        </a>
+    </p>
+    <p>
+        <a href="http://0.0.0.0:9000/oauth/twitter" class="tw-button">
+            Register with Twitter:
+            <img alt="Twitter" src="register_files/twitter-1.png" height="64" width="64" border="0">
+        </a>
+    </p>
+    <p>
+        <a href="http://0.0.0.0:9000/oauth/google" class="go-button">
+            Register with Google: 
+			<img alt="Google" src="register_files/google-1.png" height="64" width="64" border="0">
+        </a>
+    </p>
+</div>--></body></html>
